@@ -91,8 +91,7 @@ public class ProjectUtil implements Serializable {
             selectData = conn.prepareStatement(cmd);
             selectData.setInt(1, id);
             ResultSet rs = selectData.executeQuery();
-            while (rs.next()) {
-
+            if (rs.next()) {
                 project.setProjectId(rs.getInt("project_id"));
                 project.setName(rs.getString("name"));
                 project.setLocation(rs.getString("location"));
