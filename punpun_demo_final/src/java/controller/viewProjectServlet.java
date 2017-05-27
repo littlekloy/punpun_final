@@ -48,6 +48,7 @@ public class viewProjectServlet extends HttpServlet {
             projectUtil.findProjectById(Integer.parseInt(id));
 
             session.setAttribute("project", projectUtil.findProjectById(Integer.parseInt(id)));
+            System.out.print(projectUtil.findProjectById(Integer.parseInt(id)));
             String url = "project-detail.jsp?id=" + id;
             response.sendRedirect(url);
             projectUtil.closeConnection();

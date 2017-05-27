@@ -24,6 +24,10 @@
         <servlet-name>searchServlet</servlet-name>
         <servlet-class>controller.searchServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>viewProjectServlet</servlet-name>
+        <servlet-class>controller.viewProjectServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
@@ -43,6 +47,10 @@
     <servlet-mapping>
         <servlet-name>searchServlet</servlet-name>
         <url-pattern>/searchServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>viewProjectServlet</servlet-name>
+        <url-pattern>/viewProjectServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
