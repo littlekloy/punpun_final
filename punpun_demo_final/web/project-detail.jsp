@@ -132,9 +132,7 @@
                 SELECT * FROM projects where project_id = ${param.id}
             </sql:query>
             <c:forEach var="project" items="${result.rows}">
-
                 <!-- Content -->
-
                 <div class="app">
                     <!-- Content -->
                     <article class="container content dashboard-page">
