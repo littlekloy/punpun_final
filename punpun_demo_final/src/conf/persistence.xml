@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="punpun_demo_finalPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>controller.Members</class>
+    <class>controller.Address</class>
+    <class>model.Notifications</class>
+    <class>model.Members</class>
+    <class>model.Tags</class>
+    <class>model.MemberTeamPivot</class>
+    <class>model.Guests</class>
+    <class>model.Items</class>
+    <class>model.Projects</class>
+    <class>model.ItemCategories</class>
+    <class>model.ProjectDonations</class>
+    <class>model.ItemDonations</class>
+    <class>model.Interests</class>
+    <class>model.DeleteLog</class>
+    <class>model.ProjectCategories</class>
+    <class>model.Teams</class>
+    <class>model.CreditCardInfo</class>
+    <class>model.ReportLog</class>
+    <class>model.Address</class>
+    <class>model.Donations</class>
+    <class>model.UpdateLog</class>
+    <class>model.ProjectItems</class>
+    <class>model.Comments</class>
+    <class>model.EditLog</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/punpun?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.password" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>
